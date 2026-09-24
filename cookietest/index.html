@@ -26,9 +26,11 @@ function getCookie(cname) {
 
 function checkCookie() {
   let user = getCookie("hasvisited");
-  if (user != "") {
+  if (hasvisited != "yes") {
     alert("welcome again " + user);
-  } else {}
+  } else {
+      if (hasvisited != "" && hasvisited != null) {
+      setCookie("yes");
      }
   }
 }
