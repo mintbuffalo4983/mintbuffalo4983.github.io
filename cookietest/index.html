@@ -25,12 +25,12 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-  let user = getCookie("hasvisited");
-  if (hasvisited != "yes") {
-    alert("welcome again " + user);
+  let visit = getCookie("hasvisited");
+  if (visit != "yes") {
+    alert("welcome again " + visit);
   } else {
-      if (hasvisited != "" && hasvisited != null) {
-      setCookie("yes");
+      if (visit != "" && visit != null) {
+      setCookie("hasvisited", yes, 30);
      }
   }
 }
