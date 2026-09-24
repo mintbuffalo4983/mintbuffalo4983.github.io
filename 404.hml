@@ -1,1 +1,14 @@
-
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Oops!</title>
+  </head>
+  <body>
+<audio autoplay>
+  <source src="Oops.ogg" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+<head>sorry, that page doesn't exist.</head>
+  </body>
+</html>
