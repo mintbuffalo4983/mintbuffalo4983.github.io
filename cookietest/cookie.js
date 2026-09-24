@@ -24,10 +24,10 @@ function getCookie(cname) {
 function checkCookie() {
   let visit = getCookie("hasvisited");
   if (visit != "yes") {
-    alert("welcome again " + visit);
+    alert("");
   } else {
       if (visit != "" && visit != null) {
-      setCookie("visit", yes);
+      setCookie("hasvisited", yes);
      }
   }
 }
