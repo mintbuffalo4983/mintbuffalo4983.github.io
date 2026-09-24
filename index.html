@@ -5,10 +5,14 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 <head>
 <body style="background-color:black">
+    <h1 style="color:red">
+    <h1 style="font-size:30px">
+    <h1 style="font-family: comic sans MS">
+    <h1 id="welcome-text">howdy! you seem new here!</h1><br>
     <l1 style="color:red">
     <l1 style="font-size:30px">
     <l1 style="font-family: comic sans MS">
-    <l1>HOWDY! there ain't much here yet, but check in every so often, who knows. there may be updates.</l1><br>
+    <l1>there ain't much here yet, but check in every so often, who knows. there may be updates.</l1><br>
     <l2><a href="/apachestartpage">the default debian apache2 index.html</a></l2><br>
     <a href="/TRC">
         <img src="/images/TRC - FHD.png" alt="The Retro Channel" with="50" height="50"></img>
@@ -17,6 +21,13 @@
     <l3><a href="https://mistlive.tv/channels/trcsd">my SD Mist channel</a></l3><br>
     <l3><a href="https://mistlive.tv/channels/trchd">my HD Mist channel</a></l3><br>
     <l4><a href="/PCS">what is the PCStar?</a></l4>
+    <script>
+        if (getCookie("visit") === "yes") {
+            document.getElementById("welcome-text").innerText = "welcome back!";
+        } else {
+            setCookie("visit", "yes", 3200);
+        }
+    </script>
     </body>
 </html>
 
