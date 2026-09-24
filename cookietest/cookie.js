@@ -27,7 +27,7 @@ function checkCookie() {
     alert("welcome again " + visit);
   } else {
       if (visit != "" && visit != null) {
-      setCookie("hasvisited", yes);
+      setCookie("visit", yes);
      }
   }
 }
