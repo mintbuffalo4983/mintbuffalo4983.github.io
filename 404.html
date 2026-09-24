@@ -7,32 +7,40 @@
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">  
   
   <style>
-    /* Centers everything perfectly on the entire screen */
+    /* Centers everything perfectly on the entire screen without scrolling */
     #centered {
-      display: grid;
-      place-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       min-height: 100vh; 
       margin: 0;
+      box-sizing: border-box;
+      text-align: center;
+      padding: 20px;
     }
     
     /* Makes the image responsive and scalable */
     .responsive-img {
       max-width: 50%;
       height: auto;
+      margin-top: 20px;
     }
   </style>
 </head>
-<body style="background-color: black; margin: 0;">
-<h1 style="color:white">oops, looks like that page doesn't exist.</h1>
-  <!-- Audio element closed safely right away -->
+<body style="background-color: black; margin: 0; overflow: hidden;">
+
+  <!-- Audio element -->
   <audio autoplay>
     <source src="/Oops.wav" type="audio/wav">
     Your browser does not support the audio element.
   </audio>
 
-  <!-- This is the actual visible content on your page -->
+  <!-- Visible content wrapper -->
   <div id="centered">
+    <h1 style="color: white; font-family: sans-serif; margin: 0;">oops, looks like that page doesn't exist.</h1>
     <img src="https://mintbuffalo4983.github.io/Game%20Over.png" alt="oops" class="transparent responsive-img">
   </div>
+
 </body>
 </html>
